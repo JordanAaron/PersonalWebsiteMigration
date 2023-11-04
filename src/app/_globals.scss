@@ -1,0 +1,35 @@
+// Screen Sizes
+@mixin for-phone-only {
+	@media (max-width: 599px) {
+		@content;
+	}
+}
+@mixin for-tablet-portrait {
+	@media (min-width: 600px) {
+		@content;
+	}
+}
+@mixin for-tablet-landscape {
+	@media (min-width: 900px) {
+		@content;
+	}
+}
+@mixin for-desktop {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}
+@mixin for-big-desktop {
+	@media (min-width: 1800px) {
+		@content;
+	}
+}
+
+// Colors
+$primary: #384d48;
+$secondary: #6e7271;
+$accent: #ff6700;
+$mid-tone-1: #d8d4d5;
+$mid-tone-2: #e2e2e2;
+$black: #000;
+$white: #fff;
