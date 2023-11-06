@@ -1,3 +1,19 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"rules": {
+		"import/order": [
+			"error",
+			{
+				"newlines-between": "always",
+				"groups": [
+					["builtin", "external"],
+					["parent", "sibling", "index"]
+				],
+				"alphabetize": {
+					"order": "asc"
+				}
+			}
+		]
+	},
+	"ignorePatterns": ["jest.config.mjs", "test/setup.ts"]
 }
