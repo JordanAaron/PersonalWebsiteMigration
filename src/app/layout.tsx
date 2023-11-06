@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
-import { body } from '@/app/fonts'
+import '@/app/layout.scss'
+import { bodyFont, headingFont } from './fonts'
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -13,8 +14,8 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="en">
-			<body className={body.className}>{children}</body>
+		<html lang="en" className={`${bodyFont.variable} ${headingFont.variable}`}>
+			<body>{children}</body>
 		</html>
 	)
 }
