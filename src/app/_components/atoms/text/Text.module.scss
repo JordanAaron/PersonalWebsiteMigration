@@ -1,0 +1,35 @@
+@use '@/app/globals';
+
+.bodyText {
+	font-family: globals.$body-font;
+	font-size: 1.25rem; // 20px
+
+	@include globals.for-tablet-landscape {
+		font-size: 1.375rem; // 22px
+	}
+
+	@include globals.for-desktop {
+		font-size: 1.5rem; // 24px
+	}
+
+	@include globals.for-big-desktop {
+		font-size: 1.625rem; // 26px
+	}
+}
+
+.headingText {
+	font-family: globals.$heading-font;
+	font-size: 2.25rem; // 36px
+
+	@include globals.for-tablet-landscape {
+		font-size: 2.5rem; // 40px
+	}
+
+	@include globals.for-desktop {
+		font-size: 2.75rem; // 44px
+	}
+
+	@include globals.for-big-desktop {
+		font-size: 3rem; // 48px
+	}
+}
